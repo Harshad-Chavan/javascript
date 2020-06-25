@@ -77,3 +77,33 @@ console.log(removed);
 
 mynestedarray.unshift(["first element",22]) //adding element to the beginning of an array
 console.log(mynestedarray);
+
+
+//functions
+function reusable()
+{                               
+console.log("Hey from function"); // fucntion body 
+}
+reusable(); //fucntion invoking
+
+function reusablewithargs(a,b) //with parameters
+{                               
+console.log(a + b); // fucntion body 
+}
+reusablewithargs(10,11); //fucntion invoking
+
+
+//global scope and fucntions
+var myGlobal = 5;
+function myfunc1(){
+    var mylocal = 10; //var is necessary to specify it as local scope/ fucntioan scope
+    //mylocal = 10; //var if not written makes it global by default can be accessed anywhere in the program
+}
+function myfunc2(){
+    var output = "";
+    if(typeof myGlobal != "undefined"){  output +=  "myglobal:" + myGlobal }
+    if(typeof mylocal != "undefined"){  output +=  "mylocal:" + mylocal }
+    console.log(output)
+}
+myfunc1();
+myfunc2();
