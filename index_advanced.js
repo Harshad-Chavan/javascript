@@ -96,3 +96,67 @@ warriorscopy.king.dead = true
 console.log(warriorscopy)
 console.log(warriors)
 
+//While loop
+var myarr = [];
+var cnt = 1;
+while (cnt < 5 ){
+    myarr.push(cnt);
+    cnt++;
+    console.log(myarr)
+}
+
+// for loop syntax for( var i = 0; i<5; i++) notice the var 
+
+//to traverse the array use for and condtion as length.array ans use arr[i] to get the element
+
+
+//random fucntion
+console.log(Math.random()) //betwwen 0 - 1 can be zero can never be 1
+console.log(Math.floor(Math.random()*20)) //will give numbers from 0 to 19 .. as the 1 can naver be generated
+
+//generate random number within range
+var min = 5
+var max = 10
+console.log(Math.floor(Math.random() * (max - min) + 1) + min) 
+
+//ParseInt : takes string return an integer... returns not a number ( NAN )
+console.log("type of string '30'-->" + typeof(parseInt("30")))
+
+
+//ParseInt  with radix : takes string return an integer with the given base... returns not a number ( NAN )
+console.log("type of string '101'-->" + parseInt("101",2))
+
+
+//Difference between var and let variable
+//let does not allow declaration of a vairable twice
+let myvar = "hello"
+//let myvar = "world" // this is not  (declaration) allowed int the same scope
+//aove statment gives SyntaxError: redeclaration of let myvar error
+myvar = "there" // this is allowed as this is assignment
+
+
+
+//scope of the var variable is based on where it is declared global if oustide a funtion
+// local if inside a fucntion
+
+//scope of the let vairbale depends on the block of code where it is declared
+
+//const has same feature of let but can never be changed
+
+//Mutate a constant array
+const s = [2,3,7] //this makes the array const ie properties of array such as length an so on 
+s[1] = 4 // but the inner content can be changed
+console.log(s)
+
+
+
+// how to prevent object mutation
+
+
+
+
+
+
+
+
+
