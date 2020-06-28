@@ -177,6 +177,35 @@ console.log(increment(10,5))
 console.log(increment(10))
 
 
+//rest operator and map fucntion
+//pass a fucntion to map it will perform operation on every element of the array an return an array
+const sqaurefunc = (...args) => args.map(x => x * x);
+var nargs = sqaurefunc(1,2,3,4,5)
+console.log(nargs)
+
+//spread operator same as rest operator can be used to desegregate the elements
+var nsargs = [...nargs]
+console.log(nsargs)
+
+
+//Using string with template literal
+const person = {
+    name : "harshad",
+    lastname : "chavan",
+}
+
+var fullname = `my name is ${person.name} ${person.lastname}`;
+console.log(fullname)
+
+//Create a object (type 1)
+var createPerson = (name,age,gender) => ({name,age,gender,checkage(){ return age }});
+var personone = createPerson("adam",21,"male");
+var persontwo = createPerson("eve",22,"female");
+
+console.log(personone)
+console.log(persontwo)
+console.log(persontwo.checkage())
+
 
 
 
