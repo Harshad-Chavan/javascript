@@ -151,8 +151,30 @@ console.log(s)
 
 
 // how to prevent object mutation
+const obj = [2,3,7] //this makes the array const ie properties of array such as length an so on 
+Object.freeze(obj)
+try {obj[1] = 4}
+catch(ex){console.log(ex)}
+ /// once freezed the object value cannot be change
 
 
+ //use arrow funtions to write annoymous functions
+
+ //before
+ var magic = function(){ return new Date};
+
+ //after
+ var magic =  () => new Date;
+ 
+ //arrow fucntions with params
+ const arrowWithparams = (a,b) => a + b;
+ console.log(arrowWithparams("hello","world"))
+
+
+ //higher order arrow functions
+const increment = (number,value = 1) => number + value;
+console.log(increment(10,5))
+console.log(increment(10))
 
 
 
