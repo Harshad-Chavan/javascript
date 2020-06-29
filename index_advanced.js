@@ -173,8 +173,27 @@ catch(ex){console.log(ex)}
 
  //higher order arrow functions
 const increment = (number,value = 1) => number + value;
+
+
 console.log(increment(10,5))
 console.log(increment(10))
+
+
+//Class and objects
+class Vegetable{
+    constructor(name){this._name = name}
+
+    get name() { return this._name}
+
+    set name(val) { this._name = val }
+
+
+}
+
+var pumpkin = new Vegetable('pumpkin')
+console.log(typeof(pumpkin))
+pumpkin.name = "brinjal"
+console.log(pumpkin)
 
 
 
